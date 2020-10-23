@@ -29,8 +29,8 @@ app.get('/', (req, res) => {
  const reviewRoutes = require('./controllers/reviews');
 
 // app.use:
-app.use('/api/products', productRoutes);
-app.use('/api/reviews', reviewRoutes);
+app.use('/products', productRoutes);
+app.use('/reviews', reviewRoutes);
 
 
 // Set the port and configure server to listen on that port
