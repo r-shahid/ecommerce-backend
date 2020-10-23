@@ -92,7 +92,7 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 ## Time Matrix
 
-[Link Title]()
+[Time-Priority Matrix](https://res.cloudinary.com/dir27p6mf/image/upload/v1603473804/Image_from_iOS_khvyfj.jpg)
 
 ---
 
