@@ -63,6 +63,7 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 - [Tablet - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478803/impulse/tablet_seller_vbn9qs.png)
 - [Mobile - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478995/impulse/mobile_seller_u9infx.png)
 
+- [About Us Page](https://wireframepro.mockflow.com/view/Mb414763c3b6afe3d4affd1843fe377031600054978450)
 ---
 
 ## MVP Time-Frame
