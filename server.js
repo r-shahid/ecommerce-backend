@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { PORT = 3000, NODE_ENV = 'development' } = process.env;
 
-const mongoose = require('./db/connection');
+// const mongoose = require('./db/connection');
 
 const cors = require('cors');
 // const corsOptions = require('./configs/cors.js');
@@ -25,8 +25,12 @@ app.get('/', (req, res) => {
 });
 
 // product and reviews routes:
+ const productRoutes = require('./controllers/productRoutes');
+ const reviewRoutes = require('./controllers/reviews');
 
 // app.use:
+app.use('/products', productRoutes);
+app.use('/reviews', reviewRoutes);
 
 
 // Set the port and configure server to listen on that port
