@@ -47,21 +47,21 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 - [Tablet - Home Page](https://res.cloudinary.com/rshahid/image/upload/v1603468497/impulse/tablet_home_gc4e3a.png)
 - [Mobile - Home Page](https://res.cloudinary.com/rshahid/image/upload/v1603468497/impulse/mobile_home_n6wequ.png)
 
-- [Products Page]()
-- [Tablet - Products Page]()
-- [Mobile - Products Page]()
+- [Desktop - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471251/impulse/desktop_product_page_ycf9ru.png)
+- [Tablet - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471523/impulse/tablet_product_page_bzmjir.png)
+- [Mobile - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471843/impulse/mobile_product_page_kxobe6.png)
   
-- [Checkout Page]()
-- [Tablet - Checkout Page]()
-- [Mobile - Checkout Page]()
+- [Desktop - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603473917/impulse/Desktop_cart_tfqd4c.png)
+- [Tablet - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603473015/impulse/Tablet_Cart_ysb3jf.png)
+- [Mobile - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603472619/impulse/mobile_cart_elh26o.png)
   
-- [Past Orders Page]()
+<!-- - [Past Orders Page]()
 - [Tablet - Past Orders Page]()
-- [Mobile - Past Orders Page]()
+- [Mobile - Past Orders Page]() -->
   
-- [Seller Page]()
-- [Tablet - Seller Page]()
-- [Mobile - Seller Page]()
+- [Desktop - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478472/impulse/desktop_seller_fiyfep.png)
+- [Tablet - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478803/impulse/tablet_seller_vbn9qs.png)
+- [Mobile - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478995/impulse/mobile_seller_u9infx.png)
 
 ---
 
