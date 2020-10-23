@@ -47,9 +47,9 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 - [Tablet - Home Page](https://res.cloudinary.com/rshahid/image/upload/v1603468497/impulse/tablet_home_gc4e3a.png)
 - [Mobile - Home Page](https://res.cloudinary.com/rshahid/image/upload/v1603468497/impulse/mobile_home_n6wequ.png)
 
-- [Products Page]()
-- [Tablet - Products Page]()
-- [Mobile - Products Page]()
+- [Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471251/impulse/desktop_product_page_ycf9ru.png)
+- [Tablet - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471523/impulse/tablet_product_page_bzmjir.png)
+- [Mobile - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471843/impulse/mobile_product_page_kxobe6.png)
   
 - [Checkout Page]()
 - [Tablet - Checkout Page]()
@@ -92,7 +92,7 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 ## Time Matrix
 
-[Link Title]()
+[Time Matrix link]()
 
 ---
 
@@ -131,7 +131,7 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 ## React Architecture
 
-[React Architecture](https://res.cloudinary.com/dczjejcpv/image/upload/v1603471144/F2111BC5-47CB-4575-AAE8-BD8E4F25F7AF_qfqlzg.jpg)
+[React Architecture link](https://res.cloudinary.com/dczjejcpv/image/upload/v1603471144/F2111BC5-47CB-4575-AAE8-BD8E4F25F7AF_qfqlzg.jpg)
 
 ---
 
