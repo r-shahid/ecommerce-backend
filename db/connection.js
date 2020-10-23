@@ -6,7 +6,7 @@ const config = { useUnifiedTopology: true, useNewUrlParser: true };
 const DB = mongoose.connection;
 
 // i dont have the config setup yet:
-// mongoose.connect(MONGODBURI, config);
+mongoose.connect(MONGODBURI, config);
 
 DB.on('open', () => console.log('You are connected to Mongo'))
 	.on('close', () => console.log('You are disconnected to Mongo'))

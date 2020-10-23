@@ -69,22 +69,33 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 | Component                      | Priority | Estimated Time | Actual Time |
 | :----------------------------- | :------- | :------------- | :---------- |
-| Home | H | 2 hr |  |
+| Repos | H | 1 hr |  |
+| Server | H | 1 hr |  |
+| DB | H | 3 hr |  |
+| Component Structure | H | .5 hr |  |
+| Forms | H | 3 hr |  |
+| Responsiveness | H | 3 hr |  |
+| Styling | M | 3 hr |  |
 | Products | H | 2 hr |  |
-| Cart | H | 2 hr |  |
-| Checkout Page | M | 4 hr |  |
-| Nav Bar | H | 3 hr |  |
+| Cart | M | 2 hr |  |
+| Checkout Page | L | 4 hr |  |
+| Routes | H | 2.5 hr |  |
+| Event Handling | H | 2.5 hr |  |
+| Netlify | H | 1 hr |  |
+| Heroku | H | 1 hr |  |
+| Nav Bar | H | 1.5 hr |  |
 | About Us | L  | 1 hr |  |
-| Seller | M | 4 hr |  |
+| Connection btw FE & BE | H | 2 hr |  |
+| Seller | M | 2 hr |  |
 
 
 ## PostMVP Time-Frame
 
 | Component                              | Priority | Estimated Time | Actual Time |
 | :------------------------------------- | :------- | :------------- | :---------- |
-| Past Orders | M | 2 hr |  |
-| Product Description | L | 2 hr |  |
-| Reviews Model: Automated date | L | 2 hr |  |
+| Order History | L | 2 hr |  |
+| Checkout | L | 3 hr |  |
+| Carousel | L | .5 hr |  |
 
 
 
