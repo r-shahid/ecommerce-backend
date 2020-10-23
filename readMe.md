@@ -51,40 +51,52 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 - [Tablet - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471523/impulse/tablet_product_page_bzmjir.png)
 - [Mobile - Products Page](https://res.cloudinary.com/rshahid/image/upload/v1603471843/impulse/mobile_product_page_kxobe6.png)
   
-- [Checkout Page]()
-- [Tablet - Checkout Page]()
-- [Mobile - Checkout Page]()
+- [Desktop - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603473917/impulse/Desktop_cart_tfqd4c.png)
+- [Tablet - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603473015/impulse/Tablet_Cart_ysb3jf.png)
+- [Mobile - Checkout Page](https://res.cloudinary.com/rshahid/image/upload/v1603472619/impulse/mobile_cart_elh26o.png)
   
-- [Past Orders Page]()
+<!-- - [Past Orders Page]()
 - [Tablet - Past Orders Page]()
-- [Mobile - Past Orders Page]()
+- [Mobile - Past Orders Page]() -->
   
-- [Seller Page]()
-- [Tablet - Seller Page]()
-- [Mobile - Seller Page]()
+- [Desktop - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478472/impulse/desktop_seller_fiyfep.png)
+- [Tablet - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478803/impulse/tablet_seller_vbn9qs.png)
+- [Mobile - Seller Page](https://res.cloudinary.com/rshahid/image/upload/v1603478995/impulse/mobile_seller_u9infx.png)
 
+- [About Us Page](https://wireframepro.mockflow.com/view/Mb414763c3b6afe3d4affd1843fe377031600054978450)
 ---
 
 ## MVP Time-Frame
 
 | Component                      | Priority | Estimated Time | Actual Time |
 | :----------------------------- | :------- | :------------- | :---------- |
-| Home | H | 2 hr |  |
+| Repos | H | 1 hr |  |
+| Server | H | 1 hr |  |
+| DB | H | 3 hr |  |
+| Component Structure | H | .5 hr |  |
+| Forms | H | 3 hr |  |
+| Responsiveness | H | 3 hr |  |
+| Styling | M | 3 hr |  |
 | Products | H | 2 hr |  |
-| Cart | H | 2 hr |  |
-| Checkout Page | M | 4 hr |  |
-| Nav Bar | H | 3 hr |  |
+| Cart | M | 2 hr |  |
+| Checkout Page | L | 4 hr |  |
+| Routes | H | 2.5 hr |  |
+| Event Handling | H | 2.5 hr |  |
+| Netlify | H | 1 hr |  |
+| Heroku | H | 1 hr |  |
+| Nav Bar | H | 1.5 hr |  |
 | About Us | L  | 1 hr |  |
-| Seller | M | 4 hr |  |
+| Connection btw FE & BE | H | 2 hr |  |
+| Seller | M | 2 hr |  |
 
 
 ## PostMVP Time-Frame
 
 | Component                              | Priority | Estimated Time | Actual Time |
 | :------------------------------------- | :------- | :------------- | :---------- |
-| Past Orders | M | 2 hr |  |
-| Product Description | L | 2 hr |  |
-| Reviews Model: Automated date | L | 2 hr |  |
+| Order History | L | 2 hr |  |
+| Checkout | L | 3 hr |  |
+| Carousel | L | .5 hr |  |
 
 
 
