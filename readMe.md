@@ -147,6 +147,16 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 ---
 
+## backend routing table
+| **URL** | **HTTP Verb** | Action |
+|------------|-------------|-------------|
+| /restaurants      | GET       |  it should get all restaurants from the db and return them as json
+| /restaurants        | POST       |  it should add a new restaurant to the db and return the entire list as json
+| /restaurants /:id      | GET       | it should get that individual restaurant to the db  and return as json
+| /restaurants /:id      | PUT       | it should update the individual restaurant to the db  and return as it json
+| /restaurants /:id      | DELETE      | it should delete the individual restaurant to the db  and return the entire list as json 
+
+---
 ## Additional Libraries
 
 - React
