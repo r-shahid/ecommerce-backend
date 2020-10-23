@@ -1,4 +1,4 @@
-const Review = require('../model/reviewModel');
+const Review = require('../model/reviewsModel');
 
 // Controller to get all reviews
 const getAllReviews = (req, res) => {
