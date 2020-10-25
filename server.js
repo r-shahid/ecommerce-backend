@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
  const productRoutes = require('./controllers/productRoutes');
  const reviewRoutes = require('./controllers/reviewsRoutes');
 
+ 
 // app.use:
 app.use('/products', productRoutes);
 app.use('/reviews', reviewRoutes);
