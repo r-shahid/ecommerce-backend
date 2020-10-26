@@ -5,7 +5,6 @@ const router = Router();
 const mongoose = require('mongoose')
 const toId = mongoose.Types.ObjectId
 
-
 // GET ALL products
 router.get('/', productsController.getAllProducts);
 

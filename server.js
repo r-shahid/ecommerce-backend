@@ -14,7 +14,7 @@ const productRoutes = require('./controllers/productRoutes');
 const reviewRoutes = require('./controllers/reviewsRoutes');
 
 NODE_ENV === "production" ? app.use(cors(corsOptions)) : app.use(cors());
-app.use(cors()) //anybody can make a request
+app.use(cors());
 app.use(express.json());
 app.use(morgan("tiny"));
 
@@ -32,9 +32,9 @@ app.use('/products', productRoutes);
 app.use('/reviews', reviewRoutes);
 
 // Set the port and configure server to listen on that port
-app.set('port', PORT);
+// app.set('port', PORT);
 app.listen(PORT, () => {
-	console.log(`Your are listening on port ${PORT}`);
+	console.log(`You are listening on port ${PORT}`);
 });
 
 // heroku links:

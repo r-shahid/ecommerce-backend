@@ -1,2 +1,5 @@
-node_modules
+/node_modules
+env.yaml
 .env
+development.yaml
+production.yaml
