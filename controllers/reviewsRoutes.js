@@ -1,6 +1,9 @@
-const express = require('express');
-const router = express.Router();
 const reviewsController = require('./reviews');
+const { Router } = require("express");
+const { findById } = require("../model/productModel")
+const router = Router();
+const mongoose = require('mongoose')
+const toId = mongoose.Types.ObjectId
 
 // Get all reviews
 router.get('/', reviewsController.getAllReviews);
