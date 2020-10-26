@@ -1,5 +1,5 @@
-const Product = require('../models/productModel')
-const Review = require('../models/reviewsModel')
+const Product = require('../model/productModel')
+const Review = require('../model/reviewsModel')
 
 Product.find({}).remove(() => {
   Review.find({}).remove(() => {
