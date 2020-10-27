@@ -12,12 +12,12 @@ router.get('/', reviewsController.getAllReviews);
 router.get('/:id', reviewsController.getReviewById);
 
 // Create review
-router.post('/', reviewsController.createReview);
+router.post('/products:id', reviewsController.createReview);
 
 // Update review
-router.put('/:id', reviewsController.updateReview);
+router.put('/products:id', reviewsController.updateReview);
 
 // Delete review
-router.delete('/:id', reviewsController.deleteReview);
+router.delete('/products:id', reviewsController.deleteReview);
 
 module.exports = router;
