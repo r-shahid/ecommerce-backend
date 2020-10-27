@@ -4,6 +4,8 @@ const { findById } = require("../model/productModel")
 const router = Router();
 const mongoose = require('mongoose')
 const toId = mongoose.Types.ObjectId
+const Review = require('../model/reviewsModel');
+const Product = require('../model/productModel');
 
 // Get all reviews
 router.get('/', reviewsController.getAllReviews);
