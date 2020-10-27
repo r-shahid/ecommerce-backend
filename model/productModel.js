@@ -6,7 +6,7 @@ const ProductSchema = Schema({
 	img: String,
 	price: Number,
 	productDescription: String,
-	review: [
+	Review: [
 		{
 			ref: 'Review',
 			type: Schema.Types.ObjectId,
