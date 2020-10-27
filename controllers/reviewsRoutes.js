@@ -20,7 +20,7 @@ router.post('/products:id', async (req,res) => {
     const product = await Product.findById(req.params.productid);
   review.product = product._id
   review.save()
-  product.reviews.push(review._id);
+  product.review.push(review._id);
   product.save();
   res.json(review);
 }
