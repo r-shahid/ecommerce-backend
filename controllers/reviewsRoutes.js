@@ -4,8 +4,6 @@ const { findById } = require("../model/productModel")
 const router = Router();
 const mongoose = require('mongoose')
 const toId = mongoose.Types.ObjectId
-const Review = require('../model/reviewsModel');
-const Product = require('../model/productModel');
 
 // Get all reviews
 router.get('/', reviewsController.getAllReviews);
@@ -14,7 +12,6 @@ router.get('/', reviewsController.getAllReviews);
 router.get('/:id', reviewsController.getReviewById);
 
 // Create review
-// router.post('/products:id', reviewsController.createReview);
 router.post('/:id', async (req,res) => {
     const review = await Review.create(req.body)
     const product = await Product.findById(req.params.id);
@@ -27,9 +24,9 @@ router.post('/:id', async (req,res) => {
 ) 
 
 // Update review
-router.put('/products:id', reviewsController.updateReview);
+router.put('/:id', reviewsController.updateReview);
 
 // Delete review
-router.delete('/products:id', reviewsController.deleteReview);
+router.delete('/:id', reviewsController.deleteReview);
 
 module.exports = router;
