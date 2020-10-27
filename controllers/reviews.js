@@ -16,11 +16,11 @@ const getReviewById = (req, res) => {
 };
 
 // Controller to create an review
-const createReview = (req, res) => {
-	Review.create(req.body).then((review) => {
-		res.json(review);
-	});
-};
+// const createReview = (req, res) => {
+// 	Review.create(req.body).then((review) => {
+// 		res.json(review);
+// 	});
+// };
 
 // Controller to update an review
 const updateReview = (req, res) => {
@@ -44,7 +44,14 @@ const deleteReview = (req, res) => {
 module.exports = {
 	getAllReviews,
 	getReviewById,
-	createReview,
+	// createReview,
 	updateReview,
 	deleteReview,
 };
+
+
+// const createReview = (req, res) => {
+// 	Review.create(req.body).then((review) => {
+// 		res.json(review);
+// 	});
+// };
