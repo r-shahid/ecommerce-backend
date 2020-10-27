@@ -129,13 +129,12 @@ for routes I put 3 bc of all the confusion with the urls-->
 
 | Component             |                     Description                      |
 | :------------:        | :--------------------------------------------------: |
-| Home                  | Landing Page for Web App                           |
-| Product Description   | Product Description with users being able to post reviews   |
+| Products                  | Home Page for Web App                           |
+| Product   | Highlights specific product, shows description with users being able to read and post reviews   |
 | Cart                  | Cart Page to show products before checkout                 |
 | Past Orders           | Past Orders Page showing the history of user purchases      |
-| Products              | Highlights specific product                     |
 | Seller                | Seller Page being able to post/sell their product   |
-| Checkout Page         | Final page after checkout to finalize purchase with user  |
+| Checkout Page         | Final page after cart to finalize purchase with user  |
 | About Us              | About Us Page showing team members involved with creation of app |
 
 
