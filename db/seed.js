@@ -1,5 +1,28 @@
 const Product = require('../model/productModel')
+const productData = require('./products.json')
 const Review = require('../model/reviewsModel')
+const mongoose = require('./connection')
+
+Product.deleteMany({}).then(() => {
+    Product.collection.insert(productData).then(products => {
+        console.log(products)
+    }).catch(err => {
+        console.log(err)
+    })
+}).then(() => {
+    mongoose.connection.close()
+})
+
+Review.deleteMany({}).then(() => {
+    Review.collection.insert(productData).then(reviews => {
+        console.log(reviews)
+    }).catch(err => {
+        console.log(err)
+    })
+}).then(() => {
+    mongoose.connection.close()
+})
+
 
 Product.find({}).remove(() => {
   Review.find({}).remove(() => {
