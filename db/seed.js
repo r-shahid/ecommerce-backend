@@ -5,7 +5,7 @@ const mongoose = require('./connection')
 
 Product.deleteMany({}).then(() => {
     // dont know why insert doesnt work
-    Product.collection.insert(productData).then(products => {
+    Product.collection.insertMany(productData).then(products => {
         console.log(products)
     }).catch(err => {
         console.log(err)
@@ -14,15 +14,15 @@ Product.deleteMany({}).then(() => {
     mongoose.connection.close()
 })
 
-Review.deleteMany({}).then(() => {
-    Review.collection.insert(productData).then(reviews => {
-        console.log(reviews)
-    }).catch(err => {
-        console.log(err)
-    })
-}).then(() => {
-    mongoose.connection.close()
-})
+// Review.deleteMany({}).then(() => {
+//     Review.collection.insertMany(productData).then(reviews => {
+//         console.log(reviews)
+//     }).catch(err => {
+//         console.log(err)
+//     })
+// }).then(() => {
+//     mongoose.connection.close()
+// })
 
 
 // Product.find({}).remove(() => {
