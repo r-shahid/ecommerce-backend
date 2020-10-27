@@ -15,7 +15,7 @@ router.get('/:id', reviewsController.getReviewById);
 
 // Create review
 // router.post('/products:id', reviewsController.createReview);
-router.post('/products/:id', async (req,res) => {
+router.post('/:id', async (req,res) => {
     const review = await Review.create(req.body)
     const product = await Product.findById(req.params.id);
   review.product = product._id
