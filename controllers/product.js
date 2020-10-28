@@ -3,6 +3,8 @@ const { findById } = require('../model/productModel');
 const router = Router();
 const Product = require('../model/productModel');
 const Review = require('../model/reviewsModel');
+const mongoose = require("mongoose")
+const toId = mongoose.Types.ObjectId
 
 //Create
 router.post('/newproduct', async (req,res) => {
@@ -15,7 +17,7 @@ router.post('/review/:productid', async (req,res) => {
     const product = await Product.findById(req.params.productid);
     review.product = product._id
     review.save()
-    product.reviews.push(review._id)
+    product.reviews.push(review._id);
     product.save()
     res.json(review);
 }) 
