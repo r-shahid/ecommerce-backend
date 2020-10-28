@@ -1,18 +1,13 @@
+const {Schema, model} = require("mongoose")
 const mongoose = require('../db/connection');
-const Schema = mongoose.Schema;
 
-const ProductSchema = Schema({
+const ProductSchema = new Schema({
 	product: String,
 	img: String,
 	price: Number,
 	productDescription: String,
-	Review: [
-		{
-			ref: 'Review',
-			type: Schema.Types.ObjectId,
-		},
-	],
+	Review: [{ ref: 'Review', type: Schema.Types.ObjectId }],
 });
 
-const Product = mongoose.model('Product', ProductSchema);
+const Product = model('Product', ProductSchema);
 module.exports = Product;
