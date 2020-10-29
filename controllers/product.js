@@ -28,13 +28,13 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
     res.json(await Product.findById(req.params.id).populate("reviews"))
 })
+//update product by id
+router.put("/:id", async (req, res) => {
+  res.json(await Product.findByIdAndUpdate(req.params.id));
+});
 //delete product by id works
 router.delete("/:id", async (req, res) => {
     res.json(await Product.findByIdAndRemove(req.params.id));
-  });
-//Get all reviews doesnt work (would only work if u have seperate database of just reviews)
-router.get("/reviews", async (req, res) => {
-    res.json(await Review.find({}));
   });
 //Get review by id work
 router.get("/review/:id", async (req, res) => {
