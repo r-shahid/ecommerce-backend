@@ -1,18 +1,18 @@
-const Product = require('../model/productModel')
-const productData = require('./products.json')
-const Review = require('../model/reviewsModel')
-const mongoose = require('./connection')
+// const Product = require('../model/productModel')
+// const productData = require('./products.json')
+// const Review = require('../model/reviewsModel')
+// const mongoose = require('./connection')
 
-Product.deleteMany({}).then(() => {
-    // dont know why insert doesnt work
-    Product.collection.insertMany(productData).then(products => {
-        console.log(products)
-    }).catch(err => {
-        console.log(err)
-    })
-}).then(() => {
-    mongoose.connection.close()
-})
+// Product.deleteMany({}).then(() => {
+//     // dont know why insert doesnt work
+//     Product.collection.insertMany(productData).then(products => {
+//         console.log(products)
+//     }).catch(err => {
+//         console.log(err)
+//     })
+// }).then(() => {
+//     mongoose.connection.close()
+// })
 
 // Review.deleteMany({}).then(() => {
 //     Review.collection.insertMany(productData).then(reviews => {

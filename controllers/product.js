@@ -6,12 +6,11 @@ const Review = require('../model/reviewsModel');
 const mongoose = require("mongoose")
 const toId = mongoose.Types.ObjectId
 
-//Create
+//Create a product works
 router.post('/newproduct', async (req,res) => {
     res.json(await Product.create(req.body))
 })
-
-//Create a review
+//Create a review works
 router.post('/review/:productid', async (req,res) => {
     const review = await Review.create(req.body);
     const product = await Product.findById(req.params.productid);
@@ -21,13 +20,28 @@ router.post('/review/:productid', async (req,res) => {
     product.save()
     res.json(review);
 }) 
-
-//Get products
+//Get products works
 router.get("/", async (req, res) => {
-    res.json(await Product.find({}))
+    res.json(await Product.find({}).populate("reviews"))
 })
-//Get reviews
-router.get("/review", async (req,res) => {
-    res.json(await Product.find({}));
-});
+//Get product by id works
+router.get("/:id", async (req, res) => {
+    res.json(await Product.findById(req.params.id).populate("reviews"))
+})
+//delete product by id works
+router.delete("/:id", async (req, res) => {
+    res.json(await Product.findByIdAndRemove(req.params.id));
+  });
+//Get all reviews doesnt work (would only work if u have seperate database of just reviews)
+router.get("/reviews", async (req, res) => {
+    res.json(await Review.find({}));
+  });
+//Get review by id work
+router.get("/review/:id", async (req, res) => {
+    res.json(await Review.findById(req.params.id));
+  });
+//delete review works
+router.delete("/delreview/:id", async (req, res) => {
+    res.json(await Review.findByIdAndRemove(req.params.id));
+  });
 module.exports = router;
