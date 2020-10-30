@@ -40,6 +40,10 @@ router.delete("/:id", async (req, res) => {
 router.get("/review/:id", async (req, res) => {
     res.json(await Review.findById(req.params.id));
   });
+//update review by id
+router.put("/review/:id", async (req, res) => {
+  res.json(await Review.findByIdAndUpdate(req.params.id));
+});
 //delete review works
 router.delete("/delreview/:id", async (req, res) => {
     res.json(await Review.findByIdAndRemove(req.params.id));
