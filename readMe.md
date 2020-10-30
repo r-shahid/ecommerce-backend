@@ -73,7 +73,7 @@ for routes I put 3 bc of all the confusion with the urls-->
 | Component                      | Priority | Estimated Time | Actual Time |
 | :----------------------------- | :------- | :------------- | :---------- |
 | Repos | H | 1 hr | 1 hr |
-| Server/Backend | H | 4 hr | 4 hr |
+| Server/Backend | H | 4 hr | 10 hr |
 | DB | H | 3 hrs | 6 hrs* |
 | Component Structure | H | .5 hr | 1 hr |
 | Forms | H | 3 hrs | 4 hrs |
