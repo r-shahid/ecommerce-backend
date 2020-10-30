@@ -12,10 +12,12 @@ router.post('/newproduct', async (req,res) => {
 })
 //Create a review works
 router.post('/review/:productid', async (req,res) => {
+    console.log("req.params", req.params)
     const review = await Review.create(req.body);
     const product = await Product.findById(req.params.productid);
-    review.product = product._id
-    review.save()
+    // review.product = product._id
+    // review.save()
+
     product.reviews.push(review._id);
     product.save()
     res.json(review);
