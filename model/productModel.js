@@ -6,6 +6,7 @@ const ProductSchema = new Schema({
 	img: String,
 	price: Number,
 	productDescription: String,
+	cart: {type:Boolean, default: false},
 	reviews: [{ ref: 'Review', type: Schema.Types.ObjectId }],
 });
 
