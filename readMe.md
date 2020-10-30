@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- [Netlify: impulse]()
-- [Heroku]()
+- [Netlify: impulse](https://impulse-p3.netlify.app/)
+- [Heroku](https://impulse-p3.herokuapp.com/)
 - [github backend](https://github.com/r-shahid/ecommerce-backend)
 - [github frontend](https://github.com/r-shahid/ecommerce-frontend)
 
@@ -13,11 +13,11 @@
 
 | Day   | Deliverable                                          | Status |
 | :---- | :--------------------------------------------------- | :----- |
-| Day 1 | Markdown Approval                                    | []     |
-| Day 2 | MVP                                                  | []     |
-| Day 3 | MVP                                                  | []     |
-| Day 4 | MVP + HTML/CSS w/ SCSS                               | []     |
-| Day 5 | MVP/P-MVP + debugging                                | []     |
+| Day 1 | Markdown Approval                                    | [X]     |
+| Day 2 | MVP                                                  | [X]     |
+| Day 3 | MVP                                                  | [X]     |
+| Day 4 | MVP + HTML/CSS w/ SCSS                               | [X]     |
+| Day 5 | MVP/P-MVP + debugging                                | [/]     |
 
 
 ---
@@ -34,7 +34,7 @@ Esteban Gonzalez: Backend - Server side - connecting with Postman/Mongo and API 
 
 Riana Shahid: Product Lead / Product Manager - Pull and commit approvals - Front end - React component technician - Styling of web app
 
-Tonimarie Morris: Frontend - React component main technician - React architect designer - Styling of web app
+Tonimarie Morris: Frontend - React component main technician - React architect designer
 
 Zack Yang: Backend - Setup and foundation - Web App planner
 
@@ -73,31 +73,33 @@ for routes I put 3 bc of all the confusion with the urls-->
 | Component                      | Priority | Estimated Time | Actual Time |
 | :----------------------------- | :------- | :------------- | :---------- |
 | Repos | H | 1 hr | 1 hr |
-| Server/Backend | H | 4 hr | 10 hr |
-| DB | H | 3 hrs | 6 hrs* |
+| Server/Backend | H | 4 hr | 25 hr |
+| DB | H | 3 hrs | 10 hrs |
 | Component Structure | H | .5 hr | 1 hr |
-| Forms | H | 3 hrs | 4 hrs |
-| Responsiveness | H | 3 hrs |  |
-| Styling | M | 3 hrs |  |
-| Products | H | 2 hrs |  |
+| Forms | H | 3 hrs | 12 hrs |
+| Responsiveness | H | 3 hrs | 1 hr |
+| Styling | M | 3 hrs | 8 hrs |
+| Products | H | 2 hrs | 2 hrs |
 | Routes | H | 2.5 hrs | 8 hrs |
 | Event Handling | H | 2.5 hrs | 21 hrs |
-| Netlify | H | 1 hr |  |
-| Heroku | H | 1 hr |  |
-| Nav Bar | H | 1.5 hrs |  |
-| About Us | L  | 1 hr |  |
-| Connection btw FE & BE | H | 2 hrs |  |
+| Netlify | H | 1 hr | 1 hr |
+| Heroku | H | 1 hr | 1 hr |
+| Nav Bar | H | 1.5 hrs | 2 hrs|
+| About Us | L  | 1 hr | 1 hr |
+| Connection btw FE & BE | H | 2 hrs | 3 hrs |
 | Seller | M | 2 hrs | 1 hr |
+| Post MVP | L | 7.5 hrs  | 2 hr |
+| Total |  | 40.5 hrs  | 100 hrs |
 
 
 ## PostMVP Time-Frame
 
 | Component                              | Priority | Estimated Time | Actual Time |
 | :------------------------------------- | :------- | :------------- | :---------- |
-| Cart | M | 2 hr |  |
+| Cart | M | 2 hr | 1 hr |
 | Order History | L | 2 hr |  |
 | Checkout | L | 3 hr |  |
-| Carousel | L | .5 hr |  |
+| Carousel | L | .5 hr | 1 hr |
 
 
 
@@ -110,18 +112,18 @@ for routes I put 3 bc of all the confusion with the urls-->
 ---
 
 ### MVP
-- Landing Page (Home)
-- Products
-- Cart
-- Checkout Page
+- Products/Landing Page
 - Nav Bar
 - About Us
+- Product Description/Review
 
 
 ### PostMVP
 - Seller Page/Post
 - Past Orders
-- Product Description/Review
+- Cart
+- Checkout Page
+
 
 
 ---
@@ -130,8 +132,8 @@ for routes I put 3 bc of all the confusion with the urls-->
 
 | Component             |                     Description                      |
 | :------------:        | :--------------------------------------------------: |
-| Products                  | Home Page for Web App                           |
-| Product   | Highlights specific product, shows description with users being able to read and post reviews   |
+| Products              | Home Page for Web App                           |
+| Product   			| Highlights specific product, shows description with users being able to read and post reviews   |
 | Cart                  | Cart Page to show products before checkout                 |
 | Past Orders           | Past Orders Page showing the history of user purchases      |
 | Seller                | Seller Page being able to post/sell their product   |
@@ -164,7 +166,7 @@ for routes I put 3 bc of all the confusion with the urls-->
 - Mongoose
 - Mongo
 - Postman
-
+- Bootstrap
 ---
 
 ## Code Snippet
@@ -172,11 +174,23 @@ for routes I put 3 bc of all the confusion with the urls-->
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
 
 ```javaScript
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+//code snippet to make all of the reviews show up 
+<div>
+	{reviews && 
+		reviews.map((ele, ind) => {
+			return <p>{reviews[ind].name}</p>
+		}
+	)}
+</div>
 ```
 
 ---
 
 ## Issues and Resolutions
+
+Initially had separate files for routes and controllers, which caused some routes not to work, combined the files so that routes were included in the controller files. 
+
+Issue with mapping "undefined" - used condition to render (see code snippet above)
+
+Issue with rendering new reviews- they crashed the server. Updated route, updated variable to add a new review to the product then re-rendered the page to show the new review. 
+
