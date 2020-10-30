@@ -78,8 +78,6 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 | Responsiveness | H | 3 hr |  |
 | Styling | M | 3 hr |  |
 | Products | H | 2 hr |  |
-| Cart | M | 2 hr |  |
-| Checkout Page | L | 4 hr |  |
 | Routes | H | 2.5 hr |  |
 | Event Handling | H | 2.5 hr |  |
 | Netlify | H | 1 hr |  |
@@ -94,6 +92,7 @@ Zack Yang: Backend - Setup and foundation - Web App planner
 
 | Component                              | Priority | Estimated Time | Actual Time |
 | :------------------------------------- | :------- | :------------- | :---------- |
+| Cart | M | 2 hr |  |
 | Order History | L | 2 hr |  |
 | Checkout | L | 3 hr |  |
 | Carousel | L | .5 hr |  |
